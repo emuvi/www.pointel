@@ -28,76 +28,94 @@ h3 {
   font-size: 24px;
 }
 
-p, ul, ol {
-  margin-top: 0;
-  line-height: 180%;
-}
-
 a {
   text-decoration: none;
   color: #091478;
 }
 
 a:hover {
+  text-decoration: underline;
+  color: rgb(5, 12, 71);
 }
 
 #top {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-#header {
-  display: inline-block;
-  padding: 30px 20px 0px 40px;
+#top-left {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 30px 0px 10px 30px;
 }
 
-#header img {
-  float: left;
-  padding: 0px 10px 10px 0px;
-}
-
-#header a {
+#top-left a {
   text-decoration: none;
   color: #000000;
+  border: none;
+}
+
+#top-left a:hover {
+  text-decoration: none;
+}
+
+#brand {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#brand #name {
+  margin: 0px 0px 0px 10px;
+}
+
+#top-right {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+#slogan {
+  margin: 0px 0px 20px 30px;
+}
+
+#slogan h3 {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-size: 18px;
 }
 
 #menu {
+  margin: 0px 0px 0px 30px;
+}
+
+#menu-body {
+  padding: 12px;
+  border-radius: 3px 3px 0px 0px;
   display: inline-block;
   background: #83003E;
-  font-size: 20px;
-  color: #FFFFFF;
-  margin: 10px 10px 0px 10px;
-  border-radius: 3px 3px 0px 0px;
-  padding: 6px 12px;
 }
 
-#menu div {
-  display: inline-block;
-  padding: 5px 12px;
-  border-bottom: 1px solid #FFF;
-}
-
-#menu a {
-  display: inline-block;
+#menu-body a {
+  padding: 8px;
   text-decoration: none;
   font-size: 16px;
   color: #FFFFFF;
   border: none;
+  border-bottom: 1px solid #FFFFFF;
 }
 
-#menu a:hover, #menu a {
+#menu a:hover {
   text-decoration: none;
-}
-
-#slogan {
-  float: right;
 }
 
 #menu-line {
   background: #83003E;
   height: 3px;
+  clear: both;
 }
 
 #banner {
@@ -110,22 +128,13 @@ a:hover {
   height: auto;
 }
 
-#page {
-  overflow: hidden;
-  margin: 0px auto;
-  padding: 30px 30px;
-  background: #FFFFFF;
-  border: 1px solid #D4D4D4;
-}
-
 #content {
   margin: 30px;
 }
 
 #footer {
-  background: ffffff;
-  overflow: hidden;
-  height: 200px;
-  margin: 0 auto;
-  padding: 40px 0 15px 0;
+  text-align: center;
+  border-top: 1px solid #CCCCCC;
+  background: #ffffff;
+  padding: 40px;
 }
