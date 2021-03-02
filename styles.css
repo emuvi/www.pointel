@@ -4,11 +4,21 @@
   border: 0;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url("/assets/roboto.ttf");
+}
+
 body {
   background: #EFEFEF url("/assets/main-bg.jpg");
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   color: #000000;
+}
+
+@font-face {
+  font-family: 'Odibee Sans';
+  src: url("/assets/odibee-sans.ttf");
 }
 
 h1, h2, h3 {
